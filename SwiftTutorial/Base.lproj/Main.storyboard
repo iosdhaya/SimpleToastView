@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh4-jc-3eG">
+                                <rect key="frame" x="223" y="268" width="154" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="154" id="6bz-w8-RTX"/>
+                                    <constraint firstAttribute="width" constant="154" id="eG0-aG-qgn"/>
+                                    <constraint firstAttribute="height" constant="64" id="j7d-P9-T0z"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="zlZ-ia-Je8"/>
+                                </constraints>
+                                <state key="normal" title="Click on me :) (Center)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActionCenter" destination="BYZ-38-t0r" eventType="touchUpInside" id="n7P-he-Ehg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1n-tN-fYo">
+                                <rect key="frame" x="222" y="173" width="157" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="2cv-iA-nKH"/>
+                                    <constraint firstAttribute="width" constant="157" id="riu-Bg-iF2"/>
+                                </constraints>
+                                <state key="normal" title="Click on me :) (Top)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActionTop" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZj-9i-YIn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ8-2M-8Fu">
+                                <rect key="frame" x="222" y="366" width="157" height="64"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="Xdf-Q2-tqg"/>
+                                    <constraint firstAttribute="height" constant="64" id="dny-a1-ehT"/>
+                                </constraints>
+                                <state key="normal" title="Click on me :) (bottom)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonActionBottom" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Vi-yQ-2zM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lJ8-2M-8Fu" firstAttribute="top" secondItem="Hh4-jc-3eG" secondAttribute="bottom" constant="34" id="20a-Sq-dtN"/>
+                            <constraint firstItem="Hh4-jc-3eG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AMq-IH-Xil"/>
+                            <constraint firstItem="Hh4-jc-3eG" firstAttribute="top" secondItem="y1n-tN-fYo" secondAttribute="bottom" constant="31" id="KjJ-TG-EyH"/>
+                            <constraint firstItem="lJ8-2M-8Fu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dNn-Bf-yJB"/>
+                            <constraint firstItem="Hh4-jc-3eG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWg-NV-8ea"/>
+                            <constraint firstItem="y1n-tN-fYo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w3G-xg-kqK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="290"/>
         </scene>
     </scenes>
 </document>

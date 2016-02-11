@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9146F9E1C6D25B9000EA7D3 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9146F9D1C6D25B8000EA7D3 /* ToastView.swift */; };
 		C9E48B031C63CEB90021FB48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E48B021C63CEB90021FB48 /* AppDelegate.swift */; };
 		C9E48B051C63CEB90021FB48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E48B041C63CEB90021FB48 /* ViewController.swift */; };
 		C9E48B081C63CEB90021FB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E48B061C63CEB90021FB48 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9146F9D1C6D25B8000EA7D3 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		C9E48AFF1C63CEB90021FB48 /* SwiftTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E48B021C63CEB90021FB48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E48B041C63CEB90021FB48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				C9E48B021C63CEB90021FB48 /* AppDelegate.swift */,
+				C9146F9D1C6D25B8000EA7D3 /* ToastView.swift */,
 				C9E48B041C63CEB90021FB48 /* ViewController.swift */,
 				C9E48B061C63CEB90021FB48 /* Main.storyboard */,
 				C9E48B091C63CEB90021FB48 /* Assets.xcassets */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9E48B051C63CEB90021FB48 /* ViewController.swift in Sources */,
+				C9146F9E1C6D25B9000EA7D3 /* ToastView.swift in Sources */,
 				C9E48B031C63CEB90021FB48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +491,7 @@
 				C9E48B291C63CEB90021FB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9E48B2A1C63CEB90021FB48 /* Build configuration list for PBXNativeTarget "SwiftTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				C9E48B2C1C63CEB90021FB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9E48B2D1C63CEB90021FB48 /* Build configuration list for PBXNativeTarget "SwiftTutorialUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				C9E48B2F1C63CEB90021FB48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

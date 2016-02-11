@@ -1,9 +1,9 @@
 //
-//  SwiftTutorialUITests.swift
-//  SwiftTutorialUITests
+//  SwiftTutorialTests.swift
+//  SwiftTutorialTests
 //
-//  Created by Palanisamy Manickam on 04/02/16.
-//  Copyright © 2016 Palanisamy Manickam. All rights reserved.
+//  Created by dhayaladevan.
+//  Copyright © 2016 dhayaladevan. All rights reserved.
 //
 
 import XCTest
